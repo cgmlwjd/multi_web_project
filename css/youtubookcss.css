@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'GmarketSansMedium';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+#logo1 {
+    width: 80px;
+    height: 50px;
+}
+
+#logo2 {
+    width: 140px;
+    height: 30px;
+    padding-bottom: 0.7em;
+}
+
+.logo {
+    background-color: #fff;
+    width: 300px;
+    position: top left;
+    float: center;
+
+}
+
+header {
+    background-color: #FFF;
+    /* 헤더 배경색 설정 */
+    color: #fff;
+    /* 헤더 텍스트 색상 설정 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    /* 헤더 안쪽 여백 설정 */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 60px;
+    /* 메뉴 항목 간격 설정 */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    /* 마지막 메뉴 항목의 간격 제거 */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: orange;
+    /* 메뉴 항목 텍스트 색상 설정 */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: purple;
+    /* 메뉴 항목 텍스트 색상 설정 */
+}
+hr {
+    background-color: purple;
+    height: 1px;
+    border: 0;
+}
+section {
+    /* 여백으로 가운대 정렬을 맞췄습니다 */
+    width: 80%;
+    margin-top: 4em;
+    margin-left: 10%;
+    margin-left: 10%;
+    
+}
+
+section > .center-table { 
+    width: 70%;
+    margin: 0 auto;
+    padding: 2em;
+    font-size: 1.2em;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    /* 각진 모양 보다는 border - radius를 활용하여서 둥근 이미지로 변경 하였습니다 */
+    border: 2px solid purple; 
+
+    padding-left: 10%;
+    padding-right: 5%;
+    position: relative;
+}
+table {
+    height: 500px;
+    position: fixed;
+    justify-content: center;
+}
+
+.pswc1 {
+    font-size: 0.8em;
+    color: purple;
+}
+
+button {
+    position: relative;
+    padding: 5px 5px;
+    margin-left: 0.1em;
+    border: 2px solid orange;
+    border-radius: 15px;
+    font-family: GmarketSansMedium;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 4em;
+    transition: 0.25s;
+    
+    
+}
+button:hover {
+    background-color: purple;
+    color: white;
+    font-family: Gemarket;
+}
+button:active {
+    background-color: purple;
+    /* 버튼에 커서를 지정 하였을 떄 색상이 바뀌게 하였습니다 */
+    
+}
+input {
+    width: 350px;
+    height: 30px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 1em;
+    
+
+
+}
+footer{
+    padding: 1%;
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+a{
+    text-decoration-line : none
+}
+
+@media screen and (max-width : 1200px) {
+    section > .center-table {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width : 820px) {
+    section > .center-table {
+        font-size: 1rem;
+    }
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 구조를 나눌 때 header, section, fotter로 나눠서 작업을 진행 하였습니다. 폰트는 눈누 사이트에서 GmarketSansMedium 을 사용 했으며
+    회원가입 목록을 만들 때 테이블로 만들어서 회원가입 목록을 만들었고 테이블을 중앙 배치 하기 위해서는 display 속성을 사용하여 나눴고 여백을 지정 하여서
+    중앙 맞춤을 하였습니다. 버튼 디자인은 마우스 커서를 가져다 댔을때 보라색으로 바뀌게 만들었고 테두리에 border radius를 사용하여서 딱딱한 모양이 아닌 부드러운 모양으로 
+    만들었고 미디어 쿼리를 만들어 화면의 최소 크기와 최대 크기를 지정하여서 코딩을 하였습니다.
+
+*/
